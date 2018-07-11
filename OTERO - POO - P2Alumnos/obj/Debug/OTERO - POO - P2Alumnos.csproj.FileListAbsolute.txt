@@ -1,0 +1,10 @@
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\bin\Debug\OTERO - POO - P2Alumnos.exe.config
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\bin\Debug\OTERO - POO - P2Alumnos.exe
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\bin\Debug\OTERO - POO - P2Alumnos.pdb
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.csprojAssemblyReference.cache
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO___POO___P2Alumnos.fMain.resources
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO___POO___P2Alumnos.Properties.Resources.resources
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.csproj.GenerateResource.cache
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.csproj.CoreCompileInputs.cache
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.exe
+C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.pdb
