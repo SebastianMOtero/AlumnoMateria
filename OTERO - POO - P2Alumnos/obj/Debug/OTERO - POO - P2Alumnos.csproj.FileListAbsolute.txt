@@ -8,3 +8,14 @@ C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\
 C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.csproj.CoreCompileInputs.cache
 C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.exe
 C:\Users\walte\source\repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.pdb
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\bin\Debug\OTERO - POO - P2Alumnos.exe.config
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\bin\Debug\OTERO - POO - P2Alumnos.exe
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\bin\Debug\OTERO - POO - P2Alumnos.pdb
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.csprojAssemblyReference.cache
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO___POO___P2Alumnos.Form1.resources
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO___POO___P2Alumnos.Properties.Resources.resources
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.csproj.GenerateResource.cache
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.csproj.CoreCompileInputs.cache
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.exe
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO - POO - P2Alumnos.pdb
+C:\Repos\OTERO - POO - P2Alumnos\OTERO - POO - P2Alumnos\obj\Debug\OTERO___POO___P2Alumnos.FormAsignarMateria.resources

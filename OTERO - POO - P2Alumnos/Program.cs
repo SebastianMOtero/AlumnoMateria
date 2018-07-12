@@ -16,7 +16,7 @@ namespace OTERO___POO___P2Alumnos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fMain());
+            Application.Run(new Form1());
         }
     }
 }

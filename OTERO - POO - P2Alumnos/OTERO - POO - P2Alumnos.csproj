@@ -47,16 +47,26 @@
   <ItemGroup>
     <Compile Include="ClaseMateria.cs" />
     <Compile Include="ClaseAlumno.cs" />
-    <Compile Include="fMain.cs">
+    <Compile Include="ClaseUniversidad.cs" />
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fMain.Designer.cs">
-      <DependentUpon>fMain.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAsignarMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAsignarMateria.Designer.cs">
+      <DependentUpon>FormAsignarMateria.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fMain.resx">
-      <DependentUpon>fMain.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAsignarMateria.resx">
+      <DependentUpon>FormAsignarMateria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

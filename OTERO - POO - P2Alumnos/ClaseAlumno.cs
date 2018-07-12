@@ -6,19 +6,25 @@ using System.Threading.Tasks;
 
 namespace OTERO___POO___P2Alumnos
 {
-    class ClaseAlumno
+    public class ClaseAlumno
     {
-        List<ClaseMateria> listaMaterias;
+        #region "Variables"
+        List<ClaseMateria> ListaMateriasEnCurso;
+        List<ClaseMateria> ListaMateriasAprobadas;
+        List<ClaseMateria> ListaMateriasDesaprobadas;
         private int legajo;
         private string nombre;
         private string apellido;
-        
+        #endregion
+
         #region "Constructores"
         public ClaseAlumno()
         {
-            listaMaterias = new List<ClaseMateria>();
+            ListaMateriasEnCurso = new List<ClaseMateria>();
+            ListaMateriasAprobadas = new List<ClaseMateria>();
+            ListaMateriasDesaprobadas = new List<ClaseMateria>();
         }
-        public ClaseAlumno(int pLegajo, string pNombre, string pApellido)
+        public ClaseAlumno(int pLegajo, string pNombre, string pApellido) : this()
         {
             Legajo = pLegajo;
             Nombre = pNombre;
@@ -41,6 +47,58 @@ namespace OTERO___POO___P2Alumnos
         {
             get { return apellido; }
             set { apellido = value; }
+        }
+
+        public ClaseMateria[] MateriasEnCurso
+        {
+            get { return ListaMateriasEnCurso.ToArray(); }
+        }
+
+        public ClaseMateria[] MateriasAprobadas
+        {
+            get { return ListaMateriasAprobadas.ToArray(); }
+        }
+
+        public ClaseMateria[] MateriasDesaprobadas
+        {
+            get { return ListaMateriasDesaprobadas.ToArray(); }
+        }
+        #endregion
+
+        #region "metodos"
+        public void AsignarMateria(ClaseMateria pMateria)
+        {
+            try
+            {
+                ListaMateriasEnCurso.Add(pMateria);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void FinalizarMateria(ClaseMateria pMateria)
+        {
+            try
+            {
+                if (pMateria.Nota > 4)
+                {
+                    ListaMateriasAprobadas.Add(pMateria);
+                }
+                else
+                {
+                    ListaMateriasDesaprobadas.Add(pMateria);
+
+                }
+                ListaMateriasEnCurso.Remove(pMateria);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         #endregion
     }
