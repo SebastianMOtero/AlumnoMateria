@@ -100,6 +100,63 @@ namespace OTERO___POO___P2Alumnos
                 throw;
             }
         }
+
+        public decimal PromedioDeMateriasAprobadas()
+        {
+            int materiasAprobadas = ListaMateriasAprobadas.Count();
+            int materiasTotales = + ListaMateriasDesaprobadas.Count() + materiasAprobadas;
+            if (materiasTotales == 0)
+            {
+                throw new Exception("Aun no posee notas.");
+            }
+            return materiasAprobadas * 100 / materiasTotales;
+        }
+        public event EventHandler<EventoPromedioAltoEventsArgs> EventoPromedioAlto;
+
+        public decimal PromedioGeneral()
+        {
+            int cantNotas = 0;
+            decimal sumaNotas = 0;
+
+            foreach (ClaseMateria C in ListaMateriasAprobadas)
+            {
+                cantNotas++;
+                sumaNotas += C.Nota;
+            }
+
+            foreach (ClaseMateria B in ListaMateriasDesaprobadas)
+            {
+                cantNotas++;
+                sumaNotas += B.Nota;
+            }
+            if (cantNotas == 0)
+            {
+                throw new Exception("El alumno no posee notas.");
+            }
+            decimal prom = sumaNotas / cantNotas;
+            if (prom >= 9)
+            {
+                EventoPromedioAlto(this, new EventoPromedioAltoEventsArgs(Legajo, Nombre, Apellido, prom));
+            }
+            return (prom);
+        }
+
+        public class ApellidoAscendente : IComparer<ClaseAlumno>
+        {
+            public int Compare(ClaseAlumno x, ClaseAlumno y)
+            {
+                return String.Compare(x.Apellido, y.Apellido);
+            }
+        }
+
+        public class ApellidoDescendente : IComparer<ClaseAlumno>
+        {
+            public int Compare(ClaseAlumno x, ClaseAlumno y)
+            {
+                return String.Compare(x.Apellido, y.Apellido) * -1;
+            }
+        }
+
         #endregion
     }
 }

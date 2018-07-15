@@ -11,6 +11,7 @@ namespace OTERO___POO___P2Alumnos
         #region "Variables y declaraciones"
         List<ClaseMateria> ListaMaterias;
         List<ClaseAlumno> ListaAlumnos;
+        int alumnosOrdenAZ = 1;
         #endregion
 
         #region "Constructor"
@@ -31,6 +32,11 @@ namespace OTERO___POO___P2Alumnos
         {
             get { return ListaMaterias.ToArray(); }
         }
+        public int AlumnosOrdenAZ
+        {
+            get { return alumnosOrdenAZ;  }
+            set { alumnosOrdenAZ = value; }
+        }
         #endregion
 
         #region "Metodos"
@@ -47,6 +53,19 @@ namespace OTERO___POO___P2Alumnos
             }
         }
 
+        public void EliminarAlumno(ClaseAlumno pAlumno)
+        {
+            try
+            {
+                ListaAlumnos.Remove(pAlumno);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public void AgregarMateria(ClaseMateria pMateria)
         {
             try
@@ -57,6 +76,31 @@ namespace OTERO___POO___P2Alumnos
 
             {
 
+            }
+        }
+
+        public void EliminarMateria(ClaseMateria pMateria)
+        {
+            try
+            {
+                ListaMaterias.Remove(pMateria);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void OrdenarAlfabeticamente()
+        {
+            if (alumnosOrdenAZ == 1)
+            {
+                ListaAlumnos.Sort(new ClaseAlumno.ApellidoAscendente());
+            }
+            else
+            {
+                ListaAlumnos.Sort(new ClaseAlumno.ApellidoDescendente());
             }
         }
         #endregion

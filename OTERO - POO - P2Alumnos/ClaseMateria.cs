@@ -9,19 +9,13 @@ namespace OTERO___POO___P2Alumnos
     public abstract class ClaseMateria
     {
         #region "Variables"
-        List<ClaseAlumno> ListaAlumnos;
         private int codigo;
         private string denominacion;
         private decimal nota;
         #endregion
 
         #region "Constructor"
-        public ClaseMateria()
-        {
-            ListaAlumnos = new List<ClaseAlumno>();
-        }
-
-        public ClaseMateria(int pCodigo, string pDenominacion) : this()
+        public ClaseMateria(int pCodigo, string pDenominacion) 
         {
             Codigo = pCodigo;
             Denominacion = pDenominacion;
@@ -47,38 +41,6 @@ namespace OTERO___POO___P2Alumnos
             set { nota = value; }
         }
 
-        public ClaseAlumno[] AlumnosQueCursan
-        {
-            get { return ListaAlumnos.ToArray(); }
-        }
-        #endregion
-
-        #region "metodos"
-        public void AsignarAlumno(ClaseAlumno pAlumno)
-        {
-            try
-            {
-                ListaAlumnos.Add(pAlumno);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-        public void FinalizarMateria(ClaseAlumno pAlumno)
-        {
-            try
-            {
-                ListaAlumnos.Remove(pAlumno);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
         #endregion
     }
 
@@ -91,10 +53,6 @@ namespace OTERO___POO___P2Alumnos
 
     public class ClaseMateriaEspecializada : ClaseMateria
     {
-        #region "Variables"
-        private decimal nota;
-        #endregion
-
         #region "Constructor"
         public ClaseMateriaEspecializada(int pCodigo, string pDenominacion) : base(pCodigo, pDenominacion) { }
         #endregion
@@ -105,7 +63,7 @@ namespace OTERO___POO___P2Alumnos
             get { return base.Nota; }
             set
             {
-                if (nota > 5 && nota < 10)
+                if (value >= 6 && value <= 9)
                 {
                     base.Nota = value + 1;
                 }
